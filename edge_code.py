@@ -14,7 +14,7 @@ def sixty_sec():
     """
     This Function is sending data every 60 seconds on cloud_topic over MQTT. 
     """
-    with open('/home/vvdn/kartik_bk/interviews/zenatix/dataset.csv','r') as csv_file: #Opens the file in read mode
+    with open('dataset.csv','r') as csv_file: #Opens the file in read mode
         csv_reader = csv.reader(csv_file) # Making use of reader method for reading the file
     #Iterate through the loop to read line by line in csv file
         for line in csv_reader:
