@@ -15,7 +15,7 @@ def on_message(client, userdata, msg):
         result = "Success"
     print("Publishing message to a ","result_topic")
     pub = publish.single("result_topic", result, qos=2, retain=True)
-    with open('/home/vvdn/kartik_bk/interviews/zenatix/new.csv', 'ab') as file:
+    with open('new_database.csv', 'ab') as file:
         file.write(msg.payload)
         file.write(b'\n')
 
